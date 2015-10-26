@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Skt : An implementation of Selective K-means Tree">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Skt</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/marker68/skt">View on GitHub</a>
+
+          <h1 id="project_title">Skt</h1>
+          <h2 id="project_tagline">An implementation of Selective K-means Tree</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/marker68/skt/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/marker68/skt/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="selective-k-means-tree-search" class="anchor" href="#selective-k-means-tree-search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selective K-means Tree Search</h1>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>This project is the source code of the paper "<strong>Selective K-means Tree Search</strong>".
+In this project, we achieved to create a library for nearest neighbors search with the following features:</p>
+
+<ul>
+<li>An implementation of <strong>Product Quantization for Approximated Nearest Neighbor Search</strong> </li>
+<li>An implementation of <strong>the inverted multi-index</strong>
+</li>
+<li>An implementation of <strong>re-ranking</strong>
+</li>
+<li>The method that is described in <strong>Searching for nearest neighbors with a dense space partitioning</strong> and <strong>Selective K-means Tree Search</strong>.</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h4>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h4>
+
+<ul>
+<li>An Unix Operating System. Tested on Mac OS X 10.9 and Ubuntu 14.04.</li>
+<li>
+<a href="http://www.cmake.org/">CMake</a> 2.8 or newer. For UNIX users, check your CMake version in terminal by <code>cmake -version</code>.</li>
+<li>An GNU C++ Compiler or LLVM compiler that support C++ 11 and OpenMP.</li>
+<li>
+<a href="http://www.boost.org">BOOST</a> library installed on the machine.</li>
+</ul>
+
+<h4>
+<a id="build" class="anchor" href="#build" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build</h4>
+
+<p>We use CMake as the build system. On terminal,</p>
+
+<div class="highlight highlight-source-shell"><pre>$ git clone git@github.com:marker68/skt.git
+$ <span class="pl-c1">cd</span> ./skt
+$ git submodule update --init
+$ cmake -H. -Bbuild <span class="pl-k">&amp;&amp;</span> cmake --build build -- -j4
+<span class="pl-c"># OR IF YOU WANT TO BUILD TESTS</span>
+$ cmake -DBUILD_TEST=ON -H. -Bbuild <span class="pl-k">&amp;&amp;</span> cmake --build build -- -j4</pre></div>
+
+<p>This script will create binaries in your <code>bin/</code> and <code>lib/</code> directories. </p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>We are using Doxygen to generate the documentation. You can find that the style of comments for every methods that are implemented in these source codes are matching with Doxygen style.
+To generate the documentation:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> ./doc
+$ doxygen config.doxygen</pre></div>
+
+<p>Doxygen will create the documentation files in HTML and LaTeX format. You can also find samples and documentation in the Wiki of this project.</p>
+
+<h2>
+<a id="to-developers" class="anchor" href="#to-developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>To developers</h2>
+
+<ul>
+<li>This project was built under Eclipse CDT so we leave the configuration files <code>.cproject</code> and <code>.project</code> of the project here. If you are using Eclipse, just import the folder that contains the source code.</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Skt maintained by <a href="https://github.com/marker68">marker68</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
