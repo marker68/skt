@@ -1,52 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Skt : An implementation of Selective K-means Tree">
+    <title>Skt by marker68</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Skt</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Skt</h1>
+        <p>An implementation of Selective K-means Tree</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/marker68/skt">View on GitHub</a>
+        <p class="view"><a href="https://github.com/marker68/skt">View the Project on GitHub <small>marker68/skt</small></a></p>
 
-          <h1 id="project_title">Skt</h1>
-          <h2 id="project_tagline">An implementation of Selective K-means Tree</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/marker68/skt/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/marker68/skt/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+        <ul>
+          <li><a href="https://github.com/marker68/skt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/marker68/skt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/marker68/skt">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h1>
-<a id="selective-k-means-tree-search" class="anchor" href="#selective-k-means-tree-search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selective K-means Tree Search</h1>
+<a id="selective-k-means-tree" class="anchor" href="#selective-k-means-tree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selective K-means Tree</h1>
 
 <h2>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
-<p>This project is the source code of the paper "<strong>Selective K-means Tree Search</strong>".
+<p>This project contains the source code of the paper "<strong>Selective K-means Tree Search</strong>".
 In this project, we achieved to create a library for nearest neighbors search with the following features:</p>
 
 <ul>
-<li>An implementation of <strong>Product Quantization for Approximated Nearest Neighbor Search</strong> </li>
-<li>An implementation of <strong>the inverted multi-index</strong>
+<li>An implementation of <a href="https://hal.inria.fr/inria-00514462/document">Product Quantization for Approximated Nearest Neighbor Search</a>
 </li>
-<li>An implementation of <strong>re-ranking</strong>
+<li>An implementation of <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2014/12/TPAMI14.pdf">The Inverted Multi-index</a>
 </li>
-<li>The method that is described in <strong>Searching for nearest neighbors with a dense space partitioning</strong> and <strong>Selective K-means Tree Search</strong>.</li>
+<li>An implementation of <a href="https://hal.inria.fr/inria-00566883/PS/paper.ps">Re-ranking</a>
+</li>
+<li>The <a href="http://dl.acm.org/citation.cfm?id=2806353">Selective K-means Tree Search</a> which apply hierarchical k-means to nearest neighbor search.</li>
 </ul>
 
 <h2>
@@ -95,18 +93,28 @@ $ doxygen config.doxygen</pre></div>
 <ul>
 <li>This project was built under Eclipse CDT so we leave the configuration files <code>.cproject</code> and <code>.project</code> of the project here. If you are using Eclipse, just import the folder that contains the source code.</li>
 </ul>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Skt maintained by <a href="https://github.com/marker68">marker68</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<h2>
+<a id="related-publications" class="anchor" href="#related-publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related Publications</h2>
+
+<p>If you use this source code, please also cite the following publication:</p>
+
+<pre><code>@inproceedings{Nguyen2015,
+ author = {Nguyen, Tuan Anh and Matsui, Yusuke and Yamasaki, Toshihiko and Aizawa, Kiyoharu},
+ title = {Selective K-means Tree Search},
+ booktitle = {Proceedings of the 23rd Annual ACM Conference on Multimedia Conference},
+ year = {2015},
+ pages = {875--878},
+ publisher = {ACM},
+} 
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/marker68">marker68</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
-
   </body>
 </html>
