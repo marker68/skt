@@ -1,0 +1,12 @@
+[submodule "lib/simple-cluster"]
+	path = lib/simple-cluster
+	url = https://github.com/marker68/simple-cluster.git
+[submodule "lib/OpenBLAS"]
+	path = lib/OpenBLAS
+	url = https://github.com/marker68/OpenBLAS.git
+[submodule "lib/vlfeat"]
+	path = lib/vlfeat
+	url = https://github.com/vlfeat/vlfeat
+[submodule "lib/googletest"]
+	path = lib/googletest
+	url = https://github.com/marker68/googletest.git

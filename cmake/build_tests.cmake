@@ -1,0 +1,69 @@
+add_executable(
+    test_quantizer
+    ${PROJECT_SOURCE_DIR}/test/test_quantizer.cpp
+    ${PROJECT_SOURCE_DIR}/src/quantizer.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_encoder
+    ${PROJECT_SOURCE_DIR}/test/test_encoder.cpp
+    ${PROJECT_SOURCE_DIR}/src/encoder.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_query
+    ${PROJECT_SOURCE_DIR}/test/test_pq_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_algorithm
+    ${PROJECT_SOURCE_DIR}/test/test_algorithm.cpp)
+add_executable(
+    test_multi_query
+    ${PROJECT_SOURCE_DIR}/test/test_multi_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/multi_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_evaluation
+    ${PROJECT_SOURCE_DIR}/test/test_evaluation.cpp
+    ${PROJECT_SOURCE_DIR}/src/evaluation.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_tree_quantizer
+    ${PROJECT_SOURCE_DIR}/test/test_tree_quantizer.cpp
+    ${PROJECT_SOURCE_DIR}/src/quantizer.cpp
+    ${PROJECT_SOURCE_DIR}/src/tree_quantizer.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_tree_encoder
+    ${PROJECT_SOURCE_DIR}/test/test_tree_encoder.cpp
+    ${PROJECT_SOURCE_DIR}/src/encoder.cpp
+    ${PROJECT_SOURCE_DIR}/src/tree_encoder.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_tree_query
+    ${PROJECT_SOURCE_DIR}/test/test_tree_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/tree_query.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+add_executable(
+    test_utilities
+    ${PROJECT_SOURCE_DIR}/test/test_pq_utilities.cpp
+    ${PROJECT_SOURCE_DIR}/src/pq_utilities.cpp)
+
+set(tests
+    test_quantizer
+    test_encoder
+    test_query
+    test_algorithm
+    test_multi_query
+    test_evaluation
+    test_tree_quantizer
+    test_tree_encoder
+    test_tree_query
+    test_utilities
+)
+
+foreach(test ${tests})
+    target_link_libraries(${test} ${TEST_LIBS_FLAGS})
+    add_dependencies(${test} gtest_main simplecluster openblas vlfeat)
+endforeach(test ${tests})
