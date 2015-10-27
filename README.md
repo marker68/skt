@@ -1,6 +1,7 @@
 Selective K-means Tree
 ================================
 
+[Our poster at ACM Multimedia 2015](http://tech-codes.com/wp-content/uploads/2015/10/ACMMM-poster20151027.pdf)
 ## Introduction
 
 This project contains the source code of the paper "**Selective K-means Tree Search**".
