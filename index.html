@@ -1,40 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Skt by marker68</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>Skt by marker68</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="inner">
         <h1>Skt</h1>
-        <p>An implementation of Selective K-means Tree</p>
+        <h2>An implementation of Selective K-means Tree</h2>
+        <a href="https://github.com/marker68/skt" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-        <p class="view"><a href="https://github.com/marker68/skt">View the Project on GitHub <small>marker68/skt</small></a></p>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="selective-k-means-tree" class="anchor" href="#selective-k-means-tree" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Selective K-means Tree</h1>
 
+<p><strong><a href="https://www.researchgate.net/publication/286814404_Selective_K-means_Tree_Search">Our poster at ACM Multimedia 2015</a></strong></p>
 
-        <ul>
-          <li><a href="https://github.com/marker68/skt/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/marker68/skt/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/marker68/skt">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="selective-k-means-tree" class="anchor" href="#selective-k-means-tree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selective K-means Tree</h1>
-
-<p><a href="http://tech-codes.com/wp-content/uploads/2015/10/ACMMM-poster20151027.pdf">Our poster at ACM Multimedia 2015</a></p>
+<p><strong><a href="http://dl.acm.org/citation.cfm?id=2806353">Our paper at ACM Multimedia 2015</a></strong></p>
 
 <h2>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
 
 <p>This project contains the source code of the paper "<strong>Selective K-means Tree Search</strong>".
 In this project, we achieved to create a library for nearest neighbors search with the following features:</p>
@@ -50,10 +52,10 @@ In this project, we achieved to create a library for nearest neighbors search wi
 </ul>
 
 <h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
 <h4>
-<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h4>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prerequisites</h4>
 
 <ul>
 <li>An Unix Operating System. Tested on Mac OS X 10.9 and Ubuntu 14.04.</li>
@@ -65,7 +67,7 @@ In this project, we achieved to create a library for nearest neighbors search wi
 </ul>
 
 <h4>
-<a id="build" class="anchor" href="#build" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build</h4>
+<a id="build" class="anchor" href="#build" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build</h4>
 
 <p>We use CMake as the build system. On terminal,</p>
 
@@ -79,7 +81,7 @@ $ cmake -DBUILD_TEST=ON -H. -Bbuild <span class="pl-k">&amp;&amp;</span> cmake -
 <p>This script will create binaries in your <code>bin/</code> and <code>lib/</code> directories. </p>
 
 <h2>
-<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h2>
 
 <p>We are using Doxygen to generate the documentation. You can find that the style of comments for every methods that are implemented in these source codes are matching with Doxygen style.
 To generate the documentation:</p>
@@ -90,14 +92,14 @@ $ doxygen config.doxygen</pre></div>
 <p>Doxygen will create the documentation files in HTML and LaTeX format. You can also find samples and documentation in the Wiki of this project.</p>
 
 <h2>
-<a id="to-developers" class="anchor" href="#to-developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>To developers</h2>
+<a id="to-developers" class="anchor" href="#to-developers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To developers</h2>
 
 <ul>
 <li>This project was built under Eclipse CDT so we leave the configuration files <code>.cproject</code> and <code>.project</code> of the project here. If you are using Eclipse, just import the folder that contains the source code.</li>
 </ul>
 
 <h2>
-<a id="related-publications" class="anchor" href="#related-publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related Publications</h2>
+<a id="related-publications" class="anchor" href="#related-publications" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Publications</h2>
 
 <p>If you use this source code, please also cite the following publication:</p>
 
@@ -110,13 +112,25 @@ $ doxygen config.doxygen</pre></div>
  publisher = {ACM},
 } 
 </code></pre>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/marker68">marker68</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/marker68/skt/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/marker68/skt/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/marker68/skt"></a> is maintained by <a href="https://github.com/marker68">marker68</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+  
   </body>
 </html>
